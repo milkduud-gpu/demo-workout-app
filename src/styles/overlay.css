@@ -1,0 +1,75 @@
+.toaster {
+  position: fixed;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: calc(var(--nav-h) + var(--gap-3) + env(safe-area-inset-bottom));
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-1);
+  pointer-events: none;
+}
+
+.toast {
+  max-width: calc(var(--column) - 2 * var(--gutter));
+  padding: 14px var(--gap-4);
+  border-radius: var(--radius);
+  background: var(--iron);
+  color: var(--chalk);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow:
+    0 0 0 2px var(--chalk),
+    0 10px 28px rgb(27 29 33 / 0.35);
+  animation: toast-in var(--dur-med) var(--ease-out);
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+.dialog {
+  width: min(calc(100vw - 2 * var(--gutter)), 420px);
+  padding: var(--gap-4);
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--chalk);
+  color: var(--iron);
+}
+
+.dialog[open] {
+  animation: dialog-in var(--dur-med) var(--ease-out);
+}
+
+.dialog::backdrop {
+  background: rgb(27 29 33 / 0.6);
+}
+
+.dialog h2 {
+  font-size: var(--step-3);
+}
+
+.dialog p {
+  margin-top: var(--gap-2);
+  color: var(--slate);
+}
+
+.dialog__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+  margin-top: var(--gap-4);
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+}

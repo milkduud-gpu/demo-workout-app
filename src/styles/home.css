@@ -1,0 +1,84 @@
+.home__greeting {
+  font-size: var(--step-4);
+  padding-top: var(--gap-3);
+}
+
+.home__empty {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 700;
+  line-height: 1.05;
+  padding: var(--gap-4);
+  background: var(--chalk-step);
+  border-radius: var(--radius);
+}
+
+.last {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-3);
+  min-height: 88px;
+  padding: var(--gap-3) var(--gap-4);
+  background: var(--chalk-step);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.last:hover {
+  background: var(--chalk-deep);
+}
+
+.last__label {
+  color: var(--slate);
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+
+.last__name {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.last__meta {
+  color: var(--slate);
+  font-weight: 500;
+}
+
+.last__chevron {
+  flex: none;
+  width: 24px;
+  height: 24px;
+}
+
+.scoreboard {
+  display: flex;
+  align-items: baseline;
+  gap: var(--gap-3);
+  padding: var(--gap-3) var(--gap-4);
+  background: var(--iron);
+  color: var(--chalk);
+  border-radius: var(--radius);
+}
+
+.scoreboard__value {
+  font-family: var(--font-display);
+  font-size: var(--step-4);
+  font-weight: 800;
+  line-height: 0.9;
+  font-variant-numeric: tabular-nums;
+}
+
+.scoreboard__label {
+  font-size: var(--step-1);
+  font-weight: 500;
+}
+
+.home__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+}

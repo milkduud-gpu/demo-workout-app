@@ -1,0 +1,43 @@
+:root {
+  /* Color: chalk, iron, one orange. Error red is a different hue and never used for actions. */
+  --chalk: #f3f4f1;
+  --chalk-step: #e7e9e4;
+  --chalk-deep: #d6d9d2;
+  --iron: #1b1d21;
+  --iron-soft: #2b2e34;
+  --slate: #565b64;
+  --orange: #ff5a1f;
+  --orange-press: #e84a10;
+  --error: #c4122f;
+  --error-wash: #fbe6ea;
+
+  /* Type */
+  --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Barlow', system-ui, sans-serif;
+
+  --step--1: 0.875rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+  --step-3: 2.5rem;
+  --step-4: 4rem;
+
+  /* Space */
+  --gutter: 20px;
+  --gap-1: 8px;
+  --gap-2: 12px;
+  --gap-3: 16px;
+  --gap-4: 24px;
+  --gap-5: 40px;
+
+  /* Shape */
+  --radius: 10px;
+  --tap: 48px;
+  --column: 520px;
+  --nav-h: 68px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur-med: 240ms;
+}
