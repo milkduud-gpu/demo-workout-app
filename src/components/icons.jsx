@@ -55,3 +55,11 @@ export function Warning({ className }) {
     </svg>
   )
 }
+
+export function Back({ className }) {
+  return (
+    <svg className={className} {...base}>
+      <path d="m15 5-7 7 7 7" />
+    </svg>
+  )
+}

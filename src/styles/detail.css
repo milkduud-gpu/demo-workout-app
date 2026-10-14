@@ -1,0 +1,135 @@
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  align-self: flex-start;
+  min-height: var(--tap);
+  margin-left: -6px;
+  padding: 0 var(--gap-2) 0 6px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back svg {
+  width: 22px;
+  height: 22px;
+}
+
+.back:hover {
+  background: var(--chalk-step);
+}
+
+.detail__head {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail__title {
+  font-size: var(--step-4);
+  overflow-wrap: anywhere;
+}
+
+.detail__date {
+  color: var(--slate);
+  font-size: var(--step-1);
+  font-weight: 500;
+}
+
+.lifts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lift {
+  padding: var(--gap-3) var(--gap-4);
+  background: var(--chalk-step);
+  border-radius: var(--radius);
+}
+
+.lift h2 {
+  margin-bottom: var(--gap-2);
+  font-size: var(--step-2);
+}
+
+.lift__sets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lift__set {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-2);
+  min-height: 44px;
+}
+
+.lift__set + .lift__set {
+  border-top: 1px solid var(--chalk-deep);
+}
+
+.lift__n {
+  width: 3.2rem;
+  color: var(--slate);
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+
+.lift__score {
+  flex: 1;
+  font-size: var(--step-2);
+  line-height: 1;
+}
+
+.lift__trophy {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--iron);
+  color: var(--orange);
+  animation: trophy-pop 640ms var(--ease-out) both;
+  animation-delay: 220ms;
+}
+
+.lift__trophy svg {
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes trophy-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) rotate(-18deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.18) rotate(6deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+.detail__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-2);
+}
+
+.btn--ghost-danger {
+  background: var(--chalk-step);
+  color: var(--error);
+}
+
+.btn--ghost-danger:hover {
+  background: var(--error-wash);
+}

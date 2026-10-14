@@ -33,3 +33,7 @@ export function isThisWeek(iso, now = new Date()) {
 export function formatShortDate(iso) {
   return parseDate(iso).toLocaleDateString('en-US', { month: 'short', day: '2-digit' })
 }
+
+export function formatLongDate(iso) {
+  return parseDate(iso).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
+}
